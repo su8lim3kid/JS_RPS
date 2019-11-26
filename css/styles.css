@@ -1,15 +1,18 @@
 
-body 
-{background-color: coral;}
+body {
+background-color: teal;
+border-radius: 500px;
+}
 
 #game{
     background-color:teal;
-    border-radius: 500px;
+    
    
 }
 
 #userSelection
 {
+    background-color:teal;
     text-align: center;
     padding: 30px;
     margin: 10px; 
@@ -17,6 +20,8 @@ body
 
 #result
 {
+    background-color:teal;
+    colo:coral;
     text-align: center;
     padding: 30px;
     font-size: 2.0em;
@@ -24,23 +29,26 @@ body
 
 .selection
 {
+    background-color:teal;
 	float: left; 
 	list-style: none; 
-    border: 5px #F8F8F8  solid;
+    border: 5px #FF8362  solid;
     border-radius: 15px;
      margin: 30px; 
 }
 
 .selection img
 {
+    background-color:teal;
 	 width: 150px; 
      padding: 100px;
 }
 
 button
 {
-    background-color: #990066;
+    background-color: #FF8362 ;
     color: white;
 	border-radius: 10px;
 	font-size: 100%;
 }
+

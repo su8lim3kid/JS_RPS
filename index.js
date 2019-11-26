@@ -5,7 +5,7 @@ function playWith(option){
 	{
 	   userSelectionElement = document.getElementById(userOption);
 	   // we remove the purple border (if exist)
-	   userSelectionElement.style.border = "5px #F8F8F8  solid";
+	   userSelectionElement.style.border = "5px #FF8362  solid";
 	}	 		
 	// then, we select the user option and we add 
 	// a purple border
@@ -15,18 +15,19 @@ function playWith(option){
  }
  function playGame(){
 	var computerOption = Math.random();
- if (computerOption <0.50){
+ if (computerOption <0.28){
 	 computerOption = "Rock";
- }else if(computerOption <=0.75){
+ }else if(computerOption <=0.63){
 	 computerOption = "Paper";
  }else{
 	 computerOption = "Scissor";
+	 
  }
  
  resultMessage = compare(userOption, computerOption);
  
  document.getElementById("result").innerHTML = 
- "<p>Your weapon is: " + userOption + " - Computer weapon:" 
+ "<p>Your weapon: " + userOption + " - Computer weapon:" 
  + computerOption + "</p> <p>" + resultMessage + "</p>";
  
 }
@@ -48,7 +49,7 @@ function compare(userSelection, computerSelection)
 		    {
 		        if (computerSelection == "Scissor")
 		        {
-					 return "You win.";
+					 return "YOU WIN!!!!.";
 		        } else {
 		            return "You lose. Try again.";
 		        }
@@ -57,7 +58,7 @@ function compare(userSelection, computerSelection)
 		        
 		        if (computerSelection == "Rock")
 		        {
-		             return "You win." ;
+		             return "YOU WIN!!!!." ;
 		        } else if("scissor") {
 		            return "You lose. Try again.";
 		        }
@@ -68,7 +69,7 @@ function compare(userSelection, computerSelection)
 		        {
 		            return "You lose. Try again.";
 		        }else{
-		            return "You win.";
+		            return "YOU WIN!!!!.";
 		        }
 		    }
 		}  
